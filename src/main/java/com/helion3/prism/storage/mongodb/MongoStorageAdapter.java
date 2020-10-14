@@ -59,7 +59,7 @@ public class MongoStorageAdapter implements StorageAdapter {
         databaseName = Prism.getInstance().getConfig().getStorageCategory().getDatabase();
 
         // Collections
-        collectionEventRecordsName = "records";
+        collectionEventRecordsName = Prism.getInstance().getConfig().getStorageCategory().getServer() + "-records";
 
         records = new MongoRecords();
     }

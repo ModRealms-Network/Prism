@@ -73,8 +73,15 @@ public class StorageCategory {
     @Setting(value = "username", comment = "Credential for the database")
     private String username = "prism";
 
+    @Setting(value = "server", comment = "Server to use for the records")
+    private String server = "server";
+
     public String getAddress() {
         return address;
+    }
+
+    public String getServer() {
+        return server;
     }
 
     public void setAddress(String address) {
